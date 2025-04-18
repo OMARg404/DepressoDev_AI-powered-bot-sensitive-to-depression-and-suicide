@@ -1,0 +1,83 @@
+/* إعدادات Dark Mode العامة */
+
+body {
+    background-color: #121212;
+    /* اللون الأساسي الداكن */
+    color: #e0e0e0;
+    /* اللون الفاتح للنصوص */
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* تحسين تنسيق النصوص */
+
+h1,
+h2,
+h3,
+p {
+    color: #ffffff;
+    /* النصوص بالأبيض */
+}
+
+
+/* تنسيق الأزرار */
+
+.btn {
+    background-color: #1e2a47;
+    /* لون أزرق غامق */
+    color: #ffffff;
+    border: 1px solid #007bff;
+    /* لون الأزرق الفاتح عند الحدود */
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    /* لون أزرق فاتح عند التمرير */
+    transform: scale(1.05);
+}
+
+
+/* الألوان عند التمرير على الأزرار */
+
+a {
+    color: #007bff;
+    /* الأزرق */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    /* عند التمرير فوق الرابط */
+    text-decoration: underline;
+}
+
+
+/* تحكم في الألوان بين العناصر */
+
+.container {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* إضافة تأثير الظلال */
+
+.shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/* تخصيص الحواف الدائرية للصورة */
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+.d-flex {
+    flex-wrap: wrap;
+}

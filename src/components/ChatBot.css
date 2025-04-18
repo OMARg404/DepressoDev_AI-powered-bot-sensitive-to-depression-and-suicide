@@ -1,0 +1,123 @@
+/* Base Dark Container */
+
+.chatbot-container {
+    background: #1e1e1e;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    margin: 40px auto;
+    color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Chat Window */
+
+.chat-window {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Message Bubbles */
+
+.chat-bubble {
+    margin: 8px 0;
+    padding: 12px 16px;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* User Message */
+
+.chat-bubble.user {
+    background-color: #0a84ff;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+
+/* Bot Message */
+
+.chat-bubble.bot {
+    background-color: #3a3a3a;
+    color: #e5e5e5;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+
+/* Input Area */
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Input Field */
+
+.chat-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2c2c2c;
+    color: #eee;
+    outline: none;
+}
+
+
+/* Send Button */
+
+.send-button {
+    background-color: #0a84ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #0066cc;
+}
+
+
+/* Scrollbar for chat window */
+
+.chat-window::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+
+/* Blur effect if needed */
+
+.chatbot-container.blurred {
+    backdrop-filter: blur(10px);
+    background: rgba(30, 30, 30, 0.7);
+}
